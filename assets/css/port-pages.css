@@ -299,6 +299,8 @@ h6 {
   box-shadow: var(--shadow-lg);
   padding: 16px;
   min-width: 260px;
+  max-height: 400px;
+  overflow-y: auto;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
@@ -310,6 +312,24 @@ h6 {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
 .dropdown-menu a {

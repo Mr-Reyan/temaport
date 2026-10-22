@@ -353,12 +353,32 @@
             transition: var(--transition);
             border: 1px solid var(--border-color);
             z-index: 999;
-        }
+        
+            max-height: 400px;
+            overflow-y: auto;}
 
         .nav-item:hover .dropdown-menu {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
+        }
+
+        
+        .dropdown-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-thumb {
+            background: #CCC;
+            border-radius: 10px;
+        }
+
+        .dropdown-menu::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
         }
 
         .dropdown-menu a {
@@ -1248,15 +1268,17 @@
                         <div class="dropdown-menu">
                             <a href="services.html#provisions">Food Provisions Supply</a>
                             <a href="services.html#bonded">Bonded Stores</a>
-                            <a href="services.html#drinks">Drinks & Snacks Supply</a>
                             <a href="services.html#deck">Deck Stores</a>
                             <a href="services.html#engine">Engine Stores</a>
                             <a href="services.html#cabin">Cabin & Galley</a>
                             <a href="services.html#safety">Safety & PPE</a>
                             <a href="services.html#electrical">Electrical Stores</a>
                             <a href="services.html#chemicals">Marine Chemicals</a>
+                            <a href="services.html#welding">Welding Equipment</a>
                             <a href="services.html#spare-parts">Spare Parts</a>
                             <a href="services.html#publications">Nautical Charts</a>
+                            <a href="services.html#tools">Tools & Hardware</a>
+                            <a href="services.html#urgent">Urgent Supply</a>
                         </div>
                     </li>
 
