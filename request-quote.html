@@ -31,6 +31,8 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="assets/imgs/logo.png">
 
     <style>
         /* =========================================
@@ -897,15 +899,29 @@
             padding: 100px 0 0;
         }
 
-        /* Force white text on all footer elements */
         .site-footer p,
         .site-footer a,
         .site-footer li,
-        .site-footer span,
         .site-footer h4,
-        .site-footer strong,
         .site-footer div {
+            color: #FFFFFF;
+        }
+
+        .site-footer .footer-brand .logo-text strong {
             color: #FFFFFF !important;
+        }
+
+        .site-footer .footer-brand .logo-text span {
+            color: var(--primary) !important;
+        }
+
+        .site-footer .hero-whatsapp-tag {
+            color: #25D366 !important;
+        }
+
+        .site-footer .hero-whatsapp-num,
+        .site-footer .hero-whatsapp-arrow {
+            color: var(--primary) !important;
         }
 
         .footer-grid {
@@ -1250,7 +1266,7 @@
     <header class="site-header" id="site-header">
         <div class="container header-inner">
             <a class="logo" href="index.html">
-                <img src="https://i.ibb.co/6803z6K/logo.png" alt="Ship Chandler Tema Logo" width="50" height="50">
+                <img src="assets/imgs/logo.png" alt="Ship Chandler Tema Logo" width="50" height="50">
                 <span class="logo-text">
                     <strong>ShipChandler</strong>
                     <span>Tema</span>
@@ -1320,8 +1336,7 @@
     <main>
         <!-- SUBPAGE HERO -->
         <section class="subpage-hero">
-            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop"
-                alt="RFQ Background" class="subpage-hero-bg">
+            <img src="assets/imgs/bg-hero.jpg" alt="RFQ Background" class="subpage-hero-bg">
             <div class="container">
                 <div class="hero-content">
                     <ul class="breadcrumb">
@@ -1353,9 +1368,9 @@
                             <div class="step-item">
                                 <div class="step-num">1</div>
                                 <div class="step-text">
-                                    <h4>2-Hour Response Time</h4>
-                                    <p>We prioritize prompt communication to match the pace of your vessel's schedule.
-                                    </p>
+                                    <h4>Rapid RFQ</h4>
+                                    <p>We prioritize prompt communication and accurate quotation to match the fast pace
+                                        of your vessel's schedule.</p>
                                 </div>
                             </div>
                             <!-- Step 2 -->
@@ -1600,8 +1615,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a class="logo" href="index.html">
-                        <img src="https://i.ibb.co/6803z6K/logo.png" alt="Logo" width="50" height="50"
-                            style="border-radius: 8px;">
+                        <img src="assets/imgs/logo.png" alt="Logo" width="50" height="50" style="border-radius: 8px;">
                         <span class="logo-text">
                             <strong>ShipChandler</strong>
                             <span style="color: var(--primary);">Tema</span>
@@ -1652,8 +1666,9 @@
                                     </svg>
                                 </span>
                                 <span class="hero-whatsapp-tag">WhatsApp:</span>
-                                <span class="hero-whatsapp-num">(+248) 2 743 244</span>
-                                <span class="hero-whatsapp-arrow" aria-hidden="true">&rarr;</span>
+                                <span class="hero-whatsapp-num" style="color: var(--primary);">(+248) 2 743 244</span>
+                                <span class="hero-whatsapp-arrow" style="color: var(--primary);"
+                                    aria-hidden="true">&rarr;</span>
                             </a>
                         </li>
                     </ul>
